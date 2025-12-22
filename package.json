@@ -1,5 +1,17 @@
 {
+  "type": "module",
+  "scripts": {
+    "dev": "node server.js",
+    "seed": "node -r dotenv/config Backend/db/seed.js",
+    "db:schema": "psql -d reel_roll_db -f Backend/db/schema.sql",
+    "db:reset": "npm run db:schema && npm run seed"
+  },
   "dependencies": {
-    "express": "^5.2.1"
+    "bcrypt": "^6.0.0",
+    "dotenv": "^17.2.3",
+    "express": "^5.2.1",
+    "morgan": "^1.10.1",
+    "pg": "^8.16.3",
+    "react": "^19.2.3"
   }
 }

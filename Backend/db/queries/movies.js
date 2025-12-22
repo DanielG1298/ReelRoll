@@ -1,11 +1,11 @@
 import db from '../client.js';
 
-export async function createMovie({ title, description, releaseYear, duration, director, posterUrl}){
+export async function createMovie({ title, description, release_year, duration_minutes, director, poster_url}){
     const sql = `
-    INSERT INTO movies (title, description, release_year, duration, director, poster_url)
+    INSERT INTO movies (title, description, release_year, duration_minutes, director, poster_url)
     VALUES ($1,$2,$3,$4,$5,$6)
-    RETURNING id, title, description, release_year, duration, director, poster_url`;
-    const { rows: [movie] } = await db.query(sql, [title, description, releaseYear, duration, director, posterUrl]);
+    RETURNING id, title, description, release_year, duration_minutes, director, poster_url`;
+    const { rows: [movie] } = await db.query(sql, [title, description, release_year, duration_minutes, director, poster_url]);
     return movie;
 }
 export async function getAllMovies(){

@@ -1,17 +1,21 @@
+import "dotenv/config";
 import db from "./client.js";
 import { createMovie } from "./queries/movies.js";
-import { createGenre } from "./queries/genres.js";
+import { createGenre } from "./queries/genre.js";
 import { createMovieGenres } from "./queries/movie_genres.js";
-import { createFavorites } from "./queries/favorites.js";
-import { createUser } from "./queries/users.js";
-import {createreview } from "./queries/reviews.js";
-import { faker } from '@faker-js/faker';
 import { movies } from "../movieData.js";
 
 await db.connect();
-await seed();
+try{
+    await seed();
+    console.log ("database seeded");
+}catch(error){
+    console.error("error seeding database", error);
+    process.exit(1);
+} finally{
 await db.end();
-console.log ("database seeded");
+}
+
 //seed function to populate the database
 
 async function seed(){
@@ -25,14 +29,14 @@ async function seed(){
             duration_minutes: movie.duration_minutes,
             director: movie.director,
             poster_url: movie.poster_url,
-            genres: movie.genres
+            
         });
         //insert genres
         for (const genreName of movie.genres){
             const genre = await createGenre(genreName);
         //link movie_genres table to movies and genres
             await createMovieGenres({
-                movie_id: movies.id,
+                movie_id: createdMovie.id,
                 genre_id: genre.id
             });
 
