@@ -2,7 +2,10 @@ import express from 'express';
 const app = express();
 export default app;
 import morgan from 'morgan';
+import GetUserFromToken from './middleware/GetUserFromToken.js';
 
+// middleware to extract user from token
+app.use(GetUserFromToken);
 
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
