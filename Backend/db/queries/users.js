@@ -34,3 +34,12 @@ export async function getUserByEmail (email){
     const {rows: [user]} = await db.query (sql, [email]);
     return user;
 }
+
+export async function deleteUser(id){
+    const sql = `
+    SELECT * FROM users WHERE id = $1
+    DELETE FROM users WHERE id = $1
+    RETURNING id, username`;
+    const { rows: [user] } = await db.query(sql, [id]);
+    return user;
+}

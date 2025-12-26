@@ -15,3 +15,12 @@ export async function getFavoritesByUserId(userId){
     const { rows: favorites } = await db.query(sql, [userId]);
     return favorites;
 }
+
+export async function deleteFavorite(userId, movieId){
+    const sql = `
+    DELETE FROM favorites
+    WHERE user_id = $1 AND movie_id = $2
+    RETURNING id, user_id, movie_id`
+    const { rows: [favorite] } = await db.query(sql, [userId, movieId]);
+    return favorite;
+}

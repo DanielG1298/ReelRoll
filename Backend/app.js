@@ -14,8 +14,9 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use(morgan('dev'));
 
-// middleware to extract user from token
+// middleware routes
 app.use(GetUserFromToken);
+
 
 //api routes
 app.use('users', usersRouter);
