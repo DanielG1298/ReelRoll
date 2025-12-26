@@ -3,16 +3,26 @@ const app = express();
 export default app;
 import morgan from 'morgan';
 import GetUserFromToken from './middleware/GetUserFromToken.js';
+import usersRouter from './api/usersRouter.js';
+import movieRouter from './api/movieRouter.js';
+import genreRouter from './api/genreRouter.js';
+import reviewRouter from './api/reviewRouter.js';
+import favoritesRouter from './api/favoritesRouter.js';
 
-// middleware to extract user from token
-app.use(GetUserFromToken);
 
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use(morgan('dev'));
 
+// middleware to extract user from token
+app.use(GetUserFromToken);
 
-
+//api routes
+app.use('users', usersRouter);
+app.use('/movies', movieRouter);
+app.use('/genres', genreRouter);
+app.use('/reviews', reviewRouter);
+app.use('/favorites', favoritesRouter);
 
 
 app.use ((err, req, res, next) => {
