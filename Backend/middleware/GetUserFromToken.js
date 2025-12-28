@@ -1,9 +1,9 @@
-import GetUserById from "../db/users/GetUserById.js";
+import {getUserById} from "../db/queries/users.js";
 import { verifyToken } from "../utils/jwt.js";
 
 // attach user to request if a valid token is provided
 
-export default async function GetUserFromToken(req, res, next){
+export default async function getUserFromToken(req, res, next){
     const authorization = req.get("authorization");
     if (!authorization || !authorization.startsWith("Bearer ")){
         return next();
@@ -11,7 +11,7 @@ export default async function GetUserFromToken(req, res, next){
     const token = authorization.split(" ")[1];
     try{
         const {id} = verifyToken(token);
-        const user = await GetUserById(id);
+        const user = await getUserById(id);
         req.user = user;
         next();
     }catch(e){
