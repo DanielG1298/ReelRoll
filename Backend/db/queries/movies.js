@@ -51,7 +51,7 @@ export async function getMoviesByGenre(genreId){
     return movies;}
 
 // get movie by random title
-export async function getRandomeMovies(){
+export async function getRandomMovies(){
     const sql = `
     SELECT * FROM movies
     ORDER BY RANDOM()

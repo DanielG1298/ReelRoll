@@ -9,11 +9,19 @@ export async function createFavorites({ userId, movieId}){
     return favorites;
 }
 
-export async function getFavoritesByUserId(userId){
+
+// get favorites 
+export async function getFavorites(userId){
     const sql = `
-    SELECT * FROM favorites WHERE user_id = $1`;
-    const { rows: favorites } = await db.query(sql, [userId]);
-    return favorites;
+    SELECT 
+    m.id AS movie_id,
+    m.title,
+    m.poster_url
+    FROM favorites f
+    JOIN movies m ON f.movie_id = m.id
+    WHERE f.user_id = $1`
+    const { rows: favoriteMovies } = await db.query(sql, [userId]);
+    return favoriteMovies; 
 }
 
 export async function deleteFavorite(userId, movieId){
