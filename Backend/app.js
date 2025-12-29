@@ -31,7 +31,7 @@ app.use ((err, req, res, next) => {
         //invalid type
         case '22P02':return res.status(400).send(err.message);
         //unique constraint violation
-        case '23505':return res.status(400).send("unique constraint violation");
+        case '23505':return res.status(400).send(err.detail);
         //foreign key violation    
         case'23503': return res.status(400).send (err.detail);
         default: next (err);

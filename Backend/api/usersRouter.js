@@ -1,7 +1,7 @@
 import express from 'express';
 const usersRouter = express.Router();
 
-import { createUser, getUserByPasswordAndUsername, getUserById, deleteUser, getUserByEmail  } from '../db/queries/users.js';
+import { createUser, getUserByUsernameAndPassword, getUserById, deleteUser, getUserByEmail  } from '../db/queries/users.js';
 import requireBody from '../middleware/requireBody.js';
 import requireUser from '../middleware/requireUser.js';
 import { createToken } from '../utils/jwt.js';
@@ -10,7 +10,7 @@ export default usersRouter;
 usersRouter.post('/', requireBody(['username', 'password', 'email']),
   async (req, res, next) => {
 try {const { username, password, email } = req.body;
-const user = await createUser( username, password, email);
+const user = await createUser({ username, password, email});
 const token = createToken({ id: user.id});
 res.status(201).send(token);
   } catch (error) {
@@ -23,7 +23,7 @@ usersRouter.post('/login', requireBody(['username', 'password']),
   async (req, res, next) => {
     try{
     const { username, password } = req.body;
-    const user = await getUserByPasswordAndUsername(username, password);
+    const user = await getUserByUsernameAndPassword(username, password);
     if (!user)
       return res.status(401).send('Invalid username or password');
     const token = createToken({ id: user.id});

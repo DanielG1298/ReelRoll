@@ -11,3 +11,18 @@ export async function createGenre(name){
     const { rows: [genre] } = await db.query(sql, [name]);
     return genre;
 }
+// gets all genres from the genre table
+export async function getAllGenres(){
+    const sql = `
+    SELECT * FROM genre`;
+    const { rows: genres } = await db.query(sql);
+    return genres;
+}
+
+// get genre by id
+export async function getGenreById(id){
+    const sql = `
+    SELECT * FROM genre WHERE ID = $1`;
+    const { rows: [genre] } = await db.query(sql, [id]);
+    return genre;
+}

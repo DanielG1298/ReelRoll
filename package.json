@@ -1,7 +1,7 @@
 {
   "type": "module",
   "scripts": {
-    "dev": "node server.js",
+    "dev": "node Backend/server.js",
     "seed": "node -r dotenv/config Backend/db/seed.js",
     "test": "vitest",
     "db:schema": "psql -d reel_roll_db -f Backend/db/schema.sql",
