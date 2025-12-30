@@ -45,8 +45,8 @@ export async function getMovieByDuration(duration_minutes){
 export async function getMoviesByGenre(genreId){
     const sql = `
     SELECT movies.* FROM movies
-    JOIN movie_genres ON movies.id = movie_genres.movie_id
-    WHERE movie_genres.genre_id = $1`;
+    JOIN movie_genre ON movies.id = movie_genre.movie_id
+    WHERE movie_genre.genre_id = $1`;
     const { rows: movies} = await db.query(sql, [genreId]);
     return movies;}
 
@@ -65,7 +65,7 @@ export async function getRandomMovies(){
 export async function getRandomMoviesByGenre(genreId){
     const sql = `
     SELECT m.* FROM movies m
-    JOIN movie_genres mg
+    JOIN movie_genre mg
     ON m.id = mg.movie_id
     WHERE mg.genre_id = $1
     ORDER BY RANDOM()

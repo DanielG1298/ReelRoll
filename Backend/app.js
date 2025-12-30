@@ -21,7 +21,7 @@ app.use(getUserFromToken);
 //api routes
 app.use('/users', usersRouter);
 app.use('/movies', movieRouter);
-app.use('/genres', genreRouter);
+app.use('/genre', genreRouter);
 app.use('/reviews', reviewRouter);
 app.use('/favorites', favoritesRouter);
 
