@@ -1,19 +1,62 @@
-
+import { API } from "../const.js";
 import { createContext, useContext, useState } from "react";
 
-// context var
+//auth context var
+const AuthContext = createContext();
+
+// export for login, register, and details
 export default function AuthProvider(){
 
+    const [token, setToken] = useState();
+
+    const register = async (creds) => {
+        const response = await fetch("/users",{
+            method: "POST",
+            headers: { "Content-Type": "application/JSON",
+        },  
+            body: JSON.stringify({ username, email, password}),
+        });
+        const result = await response.json();
+        console.log(result);
+        setToken(result.token);
+
+    };
+
+//login function 
+const login = async (creds) => {
+    const response = await fetch("/users/login",{
+        method: POST,
+        headers: { "Content-Type": "application/JSON",
+    },
+    body: JSON.stringify({ username, password}),
+    });
+    const result = await response.json();
+    console.log(result);
+    setToken(result.token);
+
 };
-// export for login, register, and details
 
-//login func
+// acc func
 
-//register func
+const account = async () =>{
+    const response = await fetch('/users/me',{
+        method: 'GET',
+        headers: { "Content-Type": "apllication/json",
+            "Authrization": `Bearer ${token}`,
+         },
+    }
+);  const result = await response.json();
+    return result;
 
-// account func
-
+}
 // logout func
+const logout = () => setToken(null);
+
+
+};
+
+
+
 
 //favorites func
 
