@@ -1,4 +1,4 @@
-import { API } from "./const.js";
+
 
 // fetch movies from api
 export async function getMovies(){
