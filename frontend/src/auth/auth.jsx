@@ -53,6 +53,9 @@ const account = async () =>{
 const logout = () => setToken(null);
 
 
+// auth context 
+const value = {token, register, login, account, logout };
+return <AuthContext.Provider value={value}>{children}</AuthContext.Provider>;
 };
 
 
@@ -63,6 +66,10 @@ const logout = () => setToken(null);
 // reviews func
 
 // auth context export 
-export function useAuth(){
 
+
+export function useAuth(){
+const context = useContext(AuthContext);
+console.log("AuthContext:", context);
+return context;
 };
