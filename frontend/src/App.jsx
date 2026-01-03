@@ -1,4 +1,4 @@
-import { Routes, Route } from 'react-router';
+import { Routes, Route } from 'react-router-dom';
 import NavBar from './layout/navbar.jsx';
 import LoginPage from './users/login.jsx';
 import RegisterPage from './users/register.jsx';
@@ -9,9 +9,7 @@ import GenresList from './genres/Genres.jsx';
 import ReviewsTab from './reviews/reviews.jsx';
 import FavoritesTab from './users/favorites.jsx';
 import MovieDetails from './movies/movieDetails.jsx';
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
+import { useState } from 'react';
 import './App.css'
 
 export default function App(){

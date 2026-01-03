@@ -1,4 +1,4 @@
-
+import Randomiser from "./randomiser.jsx";
 
 export default function HomePage(){
     return(
@@ -9,13 +9,8 @@ export default function HomePage(){
                 Can't pick a movie? Let ReelRoll help you and get some random recommendations!
             </p>
 
-        <section className="ReelRollRandomiser">
-        <h2>ReelRoll Randomiser</h2>
-        <p>select a genre or just hit random to get some recommendations</p>
-        <button>Random Movie</button>
-        
-
-        </section>    
+        <Randomiser />
+            
         </main>
         </>
     )

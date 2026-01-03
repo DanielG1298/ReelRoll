@@ -42,7 +42,7 @@ export async function getRandomMovies(){
     }return [];
 }
 //fetch random movie by genre 
-export async function GetRandomMoviesByGenre(genre){
+export async function getRandomMoviesByGenre(genre){
     try{
         const response = await fetch ("/movies/random/genre/" + genre);
         const result = await response.json();

@@ -7,7 +7,7 @@ export default function NavBar(){
         <h1>ReelRoll</h1>
         <nav>
             <NavLink to='/'>Home</NavLink>
-            <navLink to='/movies'>Movies</navLink>
+            <NavLink to='/movies'>Movies</NavLink>
             <NavLink to='/login'>Login</NavLink>
             <NavLink to='/register'>Register</NavLink>
             <NavLink to='/account'>Account</NavLink>

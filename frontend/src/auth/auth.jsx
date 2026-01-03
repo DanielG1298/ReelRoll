@@ -5,7 +5,7 @@ import { createContext, useContext, useState } from "react";
 const AuthContext = createContext();
 
 // export for login, register, and details
-export default function AuthProvider(){
+export default function AuthProvider({children}) {
 
     const [token, setToken] = useState();
 
@@ -55,8 +55,9 @@ const logout = () => setToken(null);
 
 // auth context 
 const value = {token, register, login, account, logout };
-return <AuthContext.Provider value={value}>{children}</AuthContext.Provider>;
-};
+return (<AuthContext.Provider value={value}>{children}</AuthContext.Provider>
+
+);}
 
 
 

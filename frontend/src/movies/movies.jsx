@@ -2,15 +2,15 @@ import { useNavigate } from "react-router-dom";
 import { useEffect,useState } from "react";
 import { getMovies } from "../api/movieApi.js";
 
-export default function moviesPage(){
-const [movie, setMovie] = useState([]);
+export default function MoviesPage(){
+const [movies, setMovies] = useState([]);
 const navigate = useNavigate();
 
 useEffect(() => {
     const fetchMovies = async () => {
         const data = await getMovies();
         console.log(data);
-        setMovie(data);
+        setMovies(data);
     };
     fetchMovies();
 },  []);
@@ -19,15 +19,15 @@ useEffect(() => {
     return(
         <>
         <section>
-            <h2>Movie</h2>
-            <ul classname="book-list">
-              <li key={movie.id}
-              onClick={() => navigate(`/movies/${movie.id}`)}
+            <h2>Movies</h2>
+            <ul classname="movies-list">
+              <li key={movies.id}
+              onClick={() => navigate(`/movies/${movies.id}`)}
               className="movie-card">
-                <img src={movie.poster_url} alt={`${movie.title} movie-cover`}/>
+                <img src={movies.poster_url} alt={`${movies.title} movie-cover`}/>
                 <div>
-                    <h3>{movie.title}</h3>
-                    <p>{movie.director}</p>
+                    <h3>{movies.title}</h3>
+                    <p>{movies.director}</p>
                 </div>
               </li>  
             </ul>    
