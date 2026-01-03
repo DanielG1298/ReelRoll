@@ -20,7 +20,7 @@ useEffect(() => {
         <>
         <section>
             <h2>Movies</h2>
-            <ul classname="movies-list">
+            <ul className="movies-list">
               <li key={movies.id}
               onClick={() => navigate(`/movies/${movies.id}`)}
               className="movie-card">

@@ -7,7 +7,7 @@ export default function MovieDetails(){
 const [movies, setMovies] = useState();
 const { id } = useParams();
 const { token, addFav } = useAuth();
-const [ isFav, setFav ] = useState(false);     
+//const [ isFav, setFav ] = useState(false);     
 
 useEffect(()=>{
     const fetchMovie = async ()=>{

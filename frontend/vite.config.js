@@ -8,12 +8,12 @@ export default defineConfig({
     dedupe: ["react", "react-dom"],
   },
  server: {
-    proxy: {
-      "/api": {
-        target: "http://localhost:3000",
-        changeOrigin: true,
-        secure: false,
-      },
-    },
+  proxy: {
+    "/movies": "http://localhost:3000",
+    "/genre": "http://localhost:3000",
+    "/users": "http://localhost:3000",
+    "/reviews": "http://localhost:3000",
+    // add more later bacause this api is mean to me 
   },
+},
 })

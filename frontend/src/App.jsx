@@ -9,7 +9,6 @@ import GenresList from './genres/Genres.jsx';
 import ReviewsTab from './reviews/reviews.jsx';
 import FavoritesTab from './users/favorites.jsx';
 import MovieDetails from './movies/movieDetails.jsx';
-import { useState } from 'react';
 import './App.css'
 
 export default function App(){

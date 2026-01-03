@@ -13,6 +13,7 @@ const [reqCount, setReqCount] = useState(3);
 useEffect(() =>{
     const fetchGenres = async () =>{
         const data = await getGenres();
+        console.log(data);
         setGenres(data);
     };fetchGenres();
 }, []);
@@ -43,9 +44,12 @@ const displayed = random.slice(0, reqCount);
             <div className ="randomiserControls">
                 <label>
                     Genre:
-                    <select value = {selectedGenre} 
+                    <select value = {selectedGenre}
                     onChange={(event) => setSelectedGenre(event.target.value)}>
-                        <option key={genres.id} value={genres.id}>Genres</option>
+                        <option value="">All Genres</option>
+                        {genres.map((genre) =>(
+                            <option key = {genre.id} value={genre.id}>{genre.name}</option>
+                        ))}
                     </select>
                 </label>
 
@@ -66,7 +70,7 @@ const displayed = random.slice(0, reqCount);
                     </div>
                 ))}
             </div>
-
+                
         </section>
         </>
     )

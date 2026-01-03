@@ -13,7 +13,7 @@ export async function getMovies(){
 // fetch movie by id 
 export async function getMovieById(id){
     try{
-        const response = await fetch ("/movies/" + id);
+        const response = await fetch ("/api/movies/" + id);
         const result = await response.json();
         return result;
     }catch(err){
