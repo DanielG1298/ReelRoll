@@ -11,14 +11,38 @@ export async function createReview({ userId, movieId, rating, comment}){
 // get reviews by movie id
 export async function getReviewsByMovieId(movieId){
     const sql = `
-    SELECT * FROM reviews WHERE movie_id = $1`;
+    SELECT 
+    r.id,
+    r.movie_id,
+    r.user_id,
+    r.rating,
+    r.comment,
+    r.created_at,
+    u.username
+    FROM reviews r
+    JOIN users u ON u.id = r.user_id
+    WHERE r.movie_id = $1
+    ORDER BY r.created_at DESC;
+    `;
     const { rows: reviews } = await db.query(sql, [movieId]);
     return reviews;
 }
 // get reviews by user id 
  export async function getReviewsByUserId(userId){
     const sql = `
-    SELECT * FROM reviews WHERE user_id = $1`;
+    SELECT 
+      r.id,
+      r.movie_id,
+      r.user_id,
+      r.rating,
+      r.comment,
+      r.created_at,
+      u.username
+    FROM reviews r
+    JOIN users u ON u.id = r.user_id
+    WHERE r.movie_id = $1
+    ORDER BY r.created_at DESC;
+    `;
     const { rows: reviews } = await db.query(sql, [userId]);
     return reviews;
 }

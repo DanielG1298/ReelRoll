@@ -5,6 +5,19 @@ import requireUser from '../middleware/requireUser.js';
 
 export default reviewRouter;
 
+// get reviews by movie id 
+reviewRouter.get('/movie/:movieId', async(req,res,next) =>{
+    try{
+       const movieId = req.params.movieId; 
+
+       const reviews = await getReviewsByMovieId(movieId);
+       
+       res.status(200).json(reviews);
+    }catch(err){
+        next(err);
+    }
+});
+
 // requires users too be logged in to create, update, delete reviews
 reviewRouter.use(requireUser);
 
@@ -22,22 +35,10 @@ reviewRouter.post('/', async( req, res, next) =>{
     }
 });
 
-// get reviews by movie id 
-reviewRouter.get('/movie/:movieId', async(req,res,next) =>{
-    try{
-       const movieId = req.params.movieId; 
-
-       const reviews = await getReviewsByMovieId(movieId);
-       
-       res.status(200).json(reviews);
-    }catch(err){
-        next(err);
-    }
-});
 
 
 //get reviews by user id 
-reviewRouter.get('/reviews', async(req, res, next) =>{
+reviewRouter.get('/user', async(req, res, next) =>{
     try{
         const userId = req.params.userId;
 
