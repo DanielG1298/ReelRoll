@@ -10,11 +10,11 @@ export default function registerPage(){
     event.preventDefault();
     setError(null);
     const formData = new FormData(event.target);
-    const userName = formData.get("username");
+    const username = formData.get("username");
     const email = formData.get("email");
     const password = formData.get("password");
     try{
-        await register({userName,email,password});
+        await register({username,email,password});
         console.log("Register() finished"); 
         navigate("/account");
     }catch(err){
@@ -29,14 +29,15 @@ export default function registerPage(){
         <form onSubmit={tryRegister}>
         <label>
         username
-        <input type="text" name="usrname" required/>
+        <input type="text" name="username" required/>
         </label>
         <label>
         email<input type="text" name="email" required/>
         </label>
         <label>
         password<input type="password" name="password" required/>
-        </label>    
+        </label>
+        <button>Register</button>    
         </form>
         </>
     )

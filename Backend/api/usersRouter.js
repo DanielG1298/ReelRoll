@@ -12,7 +12,7 @@ usersRouter.post('/', requireBody(['username', 'password', 'email']),
 try {const { username, password, email } = req.body;
 const user = await createUser({ username, password, email});
 const token = createToken({ id: user.id});
-res.status(201).send(token);
+res.status(201).send({token});
   } catch (error) {
     next (error);
   }
@@ -27,7 +27,7 @@ usersRouter.post('/login', requireBody(['username', 'password']),
     if (!user)
       return res.status(401).send('Invalid username or password');
     const token = createToken({ id: user.id});
-    res.send(token);} catch (error) {
+    res.send({token});} catch (error) {
       next (error);
     }  
   });

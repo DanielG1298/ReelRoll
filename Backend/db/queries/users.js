@@ -39,7 +39,6 @@ export async function getUserByEmail (email){
 
 export async function deleteUser(id){
     const sql = `
-    SELECT * FROM users WHERE id = $1
     DELETE FROM users WHERE id = $1
     RETURNING id, username`;
     const { rows: [user] } = await db.query(sql, [id]);

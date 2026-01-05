@@ -1,8 +1,11 @@
 import { useAuth } from "../auth/auth.jsx";
 import { useState, useEffect } from "react";
+import { useNavigate } from "react-router-dom"; 
 
 export default function AccountPage(){
-    const { token, account, logout, reservations, removeFavorites } = useAuth();
+    const { token, account, logout, } = useAuth();
+    
+
     const [user, setUser] = useState(null);
     const [ favorites, setFavorites ] = useState([]);
 
@@ -16,9 +19,7 @@ export default function AccountPage(){
             setUser(data);
             
     //favorites data fetch 
-    const favoritesData = await favorites();
-    console.log("Favorites data:", favoritesData);
-    setFavorites(favoritesData);
+    
 
             }catch(err){
                 console.error("Error", err);
@@ -32,11 +33,21 @@ export default function AccountPage(){
     //logout handler
     const handleLogout = () => {
         logout();
-        Navigate("/login");
+        useNavigate("/login");
     }
+
+    //loading state 
+     if (!token) return <p>Please log in to view account details.</p>;
+     if (!user) return <p>Loading account details...</p>;
+   
+
     return(
         <>
         <h1>Account Details</h1>
+        <h2>{user.username}</h2>
+        <h2>{user.email}</h2>
+        <button onClick={handleLogout}>Logout</button>
+
         </>
     )
 }

@@ -6,51 +6,70 @@ const AuthContext = createContext();
 
 // export for login, register, and details
 export default function AuthProvider({children}) {
-
-    const [token, setToken] = useState();
+    //token state withb local storage
+    const [token, setToken] = useState(() => localStorage.getItem("token"));
 
     const register = async (creds) => {
         const response = await fetch("/users",{
             method: "POST",
-            headers: { "Content-Type": "application/JSON",
+            headers: { "Content-Type": "application/json",
         },  
-            body: JSON.stringify({ username, email, password}),
+            body: JSON.stringify(creds),
         });
+
+        if (!response.ok) {
+            throw new Error("Registration failed");
+        }
         const result = await response.json();
         console.log(result);
         setToken(result.token);
+        localStorage.setItem("token", result.token);
 
     };
 
 //login function 
 const login = async (creds) => {
     const response = await fetch("/users/login",{
-        method: POST,
-        headers: { "Content-Type": "application/JSON",
+        method: "POST",
+        headers: { "Content-Type": "application/json",
     },
-    body: JSON.stringify({ username, password}),
+    body: JSON.stringify(creds),
     });
+
+    if (!response.ok) {
+        const msg = await response.text();
+        throw new Error(msg);
+    }
     const result = await response.json();
     console.log(result);
     setToken(result.token);
+    localStorage.setItem("token", result.token);
 
 };
 
 // acc func
 
-const account = async () =>{
-    const response = await fetch('/users/me',{
-        method: 'GET',
-        headers: { "Content-Type": "apllication/json",
-            "Authrization": `Bearer ${token}`,
-         },
-    }
-);  const result = await response.json();
-    return result;
+const account = async () => {
+  const response = await fetch("/users/me", {
+    method: "GET",
+    headers: {
+      "Content-Type": "application/json",
+      Authorization: `Bearer ${token}`,
+    },
+  });
+
+  if (!response.ok) {
+    const text = await response.text();
+    throw new Error(text);
+  }
+
+  return response.json();
+
 
 }
 // logout func
 const logout = () => setToken(null);
+localStorage.removeItem("token");
 
 
 // auth context 

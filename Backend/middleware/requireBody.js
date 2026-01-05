@@ -5,7 +5,7 @@ return (req,res,next)=>{
 
     const missing = fields.filter((fields) => !(fields in req.body));
     if (missing.length > 0 ) 
-        return res.status(400),send(`missing fields: ${missing.join(", ")}`);
+        return res.status(400).send(`missing fields: ${missing.join(", ")}`);
     next();  
 };
 }

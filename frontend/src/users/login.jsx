@@ -1,16 +1,16 @@
 import { useAuth } from "../auth/auth.jsx";
 import { useNavigate } from "react-router-dom";
 
-export default function loginPage(){
-const { Login } = useAuth();
+export default function LoginPage(){
+const { login } = useAuth();
 const navigate = useNavigate();
 
 const tryLogin = async(event) =>{
-    event.preventDefualt();
+    event.preventDefault();
     const formData = new FormData(event.target);
     const username = formData.get("username");
     const password = formData.get("password");
-    await Login({username, password});
+    await login({username, password});
     navigate("/account");
 }
 
@@ -25,6 +25,7 @@ const tryLogin = async(event) =>{
             <label>
                 Password<input type = "password" name="password" required/>
             </label>
+            <button>Login</button>
         </form>
         </>
     )
