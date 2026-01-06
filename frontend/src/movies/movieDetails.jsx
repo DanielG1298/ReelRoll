@@ -1,6 +1,7 @@
 import { getMovieById } from "../api/movieApi.js";
 import {useState,useEffect} from "react";
 import { useParams} from "react-router-dom";
+import  ReviewsTab  from "../reviews/reviews.jsx";
 //shows the details of the selected movie//
 
 export default function MovieDetails(){
@@ -29,11 +30,13 @@ if (!movies) return <p>Loading...</p>;
             <img className="details-cover" src={movies.poster_url} alt={`${movies.title} poster`}/>
             <h2>{movies.title} </h2>
             <p>{movies.description}</p>
-            <h3>{movies.release_date}</h3>
+            <h3>{movies.release_year}</h3>
             <h3>{movies.genre}</h3>
             <h3>{movies.duration_minutes} minutes</h3>
         </div>
-        
+        <div>
+        <ReviewsTab movieId ={id}/>
+        </div>
         
         </>
     )

@@ -28,6 +28,7 @@ reviewRouter.post('/', async( req, res, next) =>{
         
         const { movieId, rating, comment } = req.body;
 
+        
         const review = await createReview({ userId, movieId, rating, comment});
         res.status(201).json(review);
     }catch(err){
