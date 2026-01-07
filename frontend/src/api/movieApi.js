@@ -25,7 +25,7 @@ export async function getMoviesByGenre(genre){
     try{
         const response = await fetch ("/movies/genre/" + genre);
         const result = await response.json();
-        console.log(result);
+        
         return result;
     }catch(err){
         console.error(err);

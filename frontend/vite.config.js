@@ -13,6 +13,7 @@ export default defineConfig({
     "/genre": "http://localhost:3000",
     "/users": "http://localhost:3000",
     "/reviews": "http://localhost:3000",
+    "/favorites": "http://localhost:3000",
     // add more later bacause this api is mean to me 
   },
 },

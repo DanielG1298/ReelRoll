@@ -1,7 +1,7 @@
 import { useAuth } from "../auth/auth.jsx";
 import { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom"; 
-
+import FavoritesTab from "./favorites.jsx";
 export default function AccountPage(){
     const { token, account, logout, } = useAuth();
     
@@ -47,7 +47,7 @@ export default function AccountPage(){
         <h2>{user.username}</h2>
         <h2>{user.email}</h2>
         <button onClick={handleLogout}>Logout</button>
-
+        <FavoritesTab />
         </>
     )
 }

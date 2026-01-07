@@ -13,7 +13,7 @@ const [reqCount, setReqCount] = useState(3);
 useEffect(() =>{
     const fetchGenres = async () =>{
         const data = await getGenres();
-        console.log(data);
+        
         setGenres(data);
     };fetchGenres();
 }, []);
