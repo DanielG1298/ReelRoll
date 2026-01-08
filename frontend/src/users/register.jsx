@@ -1,6 +1,7 @@
 import { useState } from "react"
 import { useAuth } from "../auth/auth.jsx";
 import { useNavigate } from "react-router";
+import "../CSS/register.css"
 
 export default function registerPage(){
     const { register } = useAuth();
@@ -25,20 +26,24 @@ export default function registerPage(){
     
     return(
         <>
-        <h1>Register New Account</h1>
-        <form onSubmit={tryRegister}>
-        <label>
-        username
-        <input type="text" name="username" required/>
+        <main className="register-page">
+        <section className="register-card">
+        <h1 className="register-title">Register New Account</h1>
+        <form className="register-form" onSubmit={tryRegister}>
+        <label className="register-label">
+        Username
+        <input className="register-input"type="text" name="Username" required/>
         </label>
-        <label>
-        email<input type="text" name="email" required/>
+        <label className="register-label">
+        Email<input className="register-input" type="text" name="Email" required/>
         </label>
-        <label>
-        password<input type="password" name="password" required/>
+        <label className="register-label">
+        Password<input className="register-input" type="password" name="Password" required/>
         </label>
-        <button>Register</button>    
+        <button ClassName="register-button">Register</button>    
         </form>
+        </section>
+        </main>
         </>
     )
 }

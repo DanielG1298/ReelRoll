@@ -2,7 +2,7 @@ import { getFavorites,removeFavorite } from "../api/favoritesApi"
 import { useAuth } from "../auth/auth.jsx";
 import { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
-
+import "../CSS/favorites.css"
 
 export default function FavoritesTab(){
     const navigate = useNavigate();
@@ -21,9 +21,11 @@ export default function FavoritesTab(){
     
     return(
         <>
-        <h2>Your Favorites</h2>
+        <main className="fav-page">
+        <section className="favorites-tab">
+        <h2 className="Fav-title">Your Favorites</h2>
         {favorites.length === 0 ? (<p>No favorites added yet.</p>) : (
-        <ul>
+        <ul className="fav-list">
             {favorites.map((fav) =>(
                 <li key={fav.id}
                     onClick = {() => navigate(`/movies/${fav.movie_id}`)} style={{ cursor: 'pointer' }}>
@@ -33,6 +35,8 @@ export default function FavoritesTab(){
             ))} 
         </ul>
         )}
+        </section>
+        </main>
         </>
     )
 }

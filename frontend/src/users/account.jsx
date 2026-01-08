@@ -2,6 +2,8 @@ import { useAuth } from "../auth/auth.jsx";
 import { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom"; 
 import FavoritesTab from "./favorites.jsx";
+import "../CSS/account.css"
+
 export default function AccountPage(){
     const { token, account, logout, } = useAuth();
     
@@ -43,11 +45,13 @@ export default function AccountPage(){
 
     return(
         <>
+        <main className="account-page">
         <h1>Account Details</h1>
-        <h2>{user.username}</h2>
-        <h2>{user.email}</h2>
+        <h2 className="username">Username:  {user.username}</h2>
+        <h2 className="Email">Email: {user.email}</h2>
         <button onClick={handleLogout}>Logout</button>
         <FavoritesTab />
+        </main>
         </>
     )
 }

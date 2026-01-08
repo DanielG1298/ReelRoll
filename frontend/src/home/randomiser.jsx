@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { getRandomMoviesByGenre, getRandomMovies } from "../api/movieApi.js";
 import { getGenres } from "../api/genreApi.js";
+import "./randomiser.css"
 
 export default function Randomiser(){
 const navigate = useNavigate();
