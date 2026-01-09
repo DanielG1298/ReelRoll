@@ -1,5 +1,5 @@
 import Randomiser from "./randomiser.jsx";
-import "./homePage.css"
+import "../CSS/homePage.css"
 export default function HomePage(){
     return(
         <>

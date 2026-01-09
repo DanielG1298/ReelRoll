@@ -1,11 +1,13 @@
+import { api } from "./client.js";
+
 // GET reviews for a movie
 export async function getReviewsByMovie(movieId) {
-  try{
-    const response = await fetch(`/reviews/movie/${movieId}`);
+  try {
+    const response = await fetch(api(`/reviews/movie/${movieId}`));
     if (!response.ok) throw new Error("failed to fetch reviews");
     const result = await response.json();
     return Array.isArray(result) ? result : [];
-  }catch(err){
+  } catch (err) {
     console.error(err);
     return [];
   }
@@ -14,7 +16,7 @@ export async function getReviewsByMovie(movieId) {
 // CREATE a review
 export async function createReview(token, { movieId, rating, comment }) {
   try {
-    const response = await fetch("/reviews", {
+    const response = await fetch(api("/reviews"), {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -36,10 +38,10 @@ export async function createReview(token, { movieId, rating, comment }) {
   }
 }
 
-// GET current user's reviews 
+// GET current user's reviews
 export async function getUserReviews(token) {
   try {
-    const response = await fetch("/reviews/user", {
+    const response = await fetch(api("/reviews/user"), {
       method: "GET",
       headers: {
         Authorization: `Bearer ${token}`,
@@ -62,7 +64,7 @@ export async function getUserReviews(token) {
 // UPDATE a review
 export async function updateReview(token, reviewId, { rating, comment }) {
   try {
-    const response = await fetch(`/reviews/${reviewId}`, {
+    const response = await fetch(api(`/reviews/${reviewId}`), {
       method: "PUT",
       headers: {
         "Content-Type": "application/json",
@@ -87,7 +89,7 @@ export async function updateReview(token, reviewId, { rating, comment }) {
 // DELETE a review
 export async function deleteReview(token, reviewId) {
   try {
-    const response = await fetch(`/reviews/${reviewId}`, {
+    const response = await fetch(api(`/reviews/${reviewId}`), {
       method: "DELETE",
       headers: {
         Authorization: `Bearer ${token}`,

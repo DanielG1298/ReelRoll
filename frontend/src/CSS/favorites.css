@@ -1,0 +1,68 @@
+/* Page wrapper */
+.fav-page {
+  padding: 32px 24px;
+  display: flex;
+  justify-content: center;
+}
+
+
+.favorites-tab {
+  width: min(1200px, 100%);
+}
+
+
+.Fav-title {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 800;
+  margin-bottom: 24px;
+}
+
+
+.fav-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 24px;
+}
+
+/* Card (li itself) */
+.fav-list li {
+  background: rgba(0, 0, 0, 0.25);
+  border-radius: 16px;
+  padding: 12px;
+  text-align: center;
+
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.fav-list li:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.45);
+}
+
+/* Poster */
+.fav-list li img {
+  width: 100%;
+  aspect-ratio: 2 / 3;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+/* Movie title */
+.fav-list li h3 {
+  margin-top: 10px;
+  font-size: 1.05rem;
+  font-weight: 800;
+}
+
+/* Responsive fallback */
+@media (max-width: 700px) {
+  .fav-list {
+    grid-template-columns: 1fr;
+  }
+}

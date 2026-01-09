@@ -1,0 +1,86 @@
+/* Page wrapper */
+.account-page {
+  min-height: calc(100vh - 70px);
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 32px 24px;
+
+  display: flex;
+  flex-direction: column;
+
+  position: relative;
+}
+
+/* Centered title */
+.account-page h1 {
+  margin: 0;
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 800;
+  color: #e6eaf2;
+}
+
+/* Push user info DOWN from title */
+.account-page .username,
+.account-page .Email {
+  margin-top: 32px;              
+  margin-bottom: 0;
+
+  font-size: 1rem;
+  font-weight: 700;
+  color: #b6c0d4;
+  text-align: left;
+
+  display: flex;
+  flex-direction: column;        
+  gap: 6px;
+}
+
+/* Make the actual value stand out */
+.account-page .username::after {
+  content: attr(data-value);
+}
+
+.account-page .Email::after {
+  content: attr(data-value);
+}
+
+/* Since JSX includes text already, style second line */
+.account-page .username,
+.account-page .Email {
+  line-height: 1.4;
+}
+
+.account-page .username span,
+.account-page .Email span {
+  color: #e6eaf2;
+  font-size: 1.1rem;
+  font-weight: 800;
+}
+
+/* Logout button — TOP RIGHT */
+.account-page button {
+  position: absolute;
+  top: 24px;
+  right: 24px;
+
+  padding: 10px 14px;
+  font-size: 0.95rem;
+  font-weight: 700;
+
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  background: rgba(255, 255, 255, 0.08);
+  color: #e6eaf2;
+  cursor: pointer;
+}
+
+.account-page button:hover {
+  background: rgba(255, 255, 255, 0.14);
+}
+
+/* Favorites spacing */
+.account-page > section,
+.account-page > div {
+  margin-top: 28px;
+}

@@ -1,0 +1,43 @@
+.navbar {
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  align-items: center;
+
+  height: 70px;
+  padding: 0 24px;
+
+  background-color: #0f172a; /* dark */
+  color: white;
+  
+}
+
+/* Center title/logo */
+.title {
+  margin: 0;
+  font-size: 1.75rem;
+  text-align: center;
+}
+
+/* Right-side nav links */
+.navlinks {
+  display: flex;
+  justify-content: flex-end;
+  gap: 24px;
+}
+
+/* NavLink styles */
+.navlinks a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+/* Active link (NavLink feature) */
+.navlinks a.active {
+  text-decoration: underline;
+}
+
+/* Hover */
+.navlinks a:hover {
+  opacity: 0.85;
+}

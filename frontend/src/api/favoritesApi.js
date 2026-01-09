@@ -1,7 +1,8 @@
-// get favorites for logged in user
+import { api } from "./client";
+
 export async function getFavorites(token) {
   try {
-    const response = await fetch("/favorites", {
+    const response = await fetch(api("/favorites"), {
       method: "GET",
       headers: {
         Authorization: `Bearer ${token}`,
@@ -21,10 +22,10 @@ export async function getFavorites(token) {
   }
 }
 
-// add favorite 
+// add favorite
 export async function addFavorite(token, movieId) {
   try {
-    const response = await fetch(`/favorites/${movieId}`, {
+    const response = await fetch(api(`/favorites/${movieId}`), {
       method: "POST",
       headers: {
         Authorization: `Bearer ${token}`,
@@ -47,7 +48,7 @@ export async function addFavorite(token, movieId) {
 // remove favorite (movieId required)
 export async function removeFavorite(token, movieId) {
   try {
-    const response = await fetch(`/favorites/${movieId}`, {
+    const response = await fetch(api(`/favorites/${movieId}`), {
       method: "DELETE",
       headers: {
         Authorization: `Bearer ${token}`,

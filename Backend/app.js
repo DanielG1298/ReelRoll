@@ -1,6 +1,6 @@
 import express from 'express';
 const app = express();
-
+import corsMiddleware from './middleware/cors.js';
 import morgan from 'morgan';
 import getUserFromToken from './middleware/getUserFromToken.js';
 import usersRouter from './api/usersRouter.js';
@@ -9,7 +9,7 @@ import genreRouter from './api/genreRouter.js';
 import reviewRouter from './api/reviewRouter.js';
 import favoritesRouter from './api/favoritesRouter.js';
 
-
+app.use(corsMiddleware);
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use(morgan('dev'));
