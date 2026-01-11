@@ -5,7 +5,7 @@ export const movies = [
     release_year: 2017,
     duration_minutes: 135,
     director: "Andy Muschietti",
-    poster_url: "https://image.tmdb.org/t/p/w500/__PASTE_TMDB_POSTER_PATH__.jpg",
+    poster_url: "https://upload.wikimedia.org/wikipedia/en/5/5a/It_%282017%29_poster.jpg",
     genres: ["Horror"]
   },
   {
@@ -14,7 +14,7 @@ export const movies = [
     release_year: 2017,
     duration_minutes: 104,
     director: "Jordan Peele",
-    poster_url: "https://image.tmdb.org/t/p/w500/__PASTE_TMDB_POSTER_PATH__.jpg",
+    poster_url: "https://upload.wikimedia.org/wikipedia/en/a/a3/Get_Out_poster.png",
     genres: ["Horror", "Thriller"]
   },
   {
@@ -23,7 +23,7 @@ export const movies = [
     release_year: 2004,
     duration_minutes: 103,
     director: "James Wan",
-    poster_url: "https://image.tmdb.org/t/p/w500/__PASTE_TMDB_POSTER_PATH__.jpg",
+    poster_url: "https://upload.wikimedia.org/wikipedia/en/5/56/Saw_official_poster.jpg",
     genres: ["Horror", "Thriller"]
   },
   {
@@ -32,7 +32,7 @@ export const movies = [
     release_year: 2022,
     duration_minutes: 130,
     director: "Jordan Peele",
-    poster_url: "https://image.tmdb.org/t/p/w500/__PASTE_TMDB_POSTER_PATH__.jpg",
+    poster_url: "https://upload.wikimedia.org/wikipedia/en/e/e6/Nope_%28film%29_poster.jpg",
     genres: ["Horror", "Sci-Fi"]
   },
   {
@@ -41,7 +41,7 @@ export const movies = [
     release_year: 1983,
     duration_minutes: 89,
     director: "David Cronenberg",
-    poster_url: "https://image.tmdb.org/t/p/w500/__PASTE_TMDB_POSTER_PATH__.jpg",
+    poster_url: "https://upload.wikimedia.org/wikipedia/en/4/46/Videodrome_%281983%29_poster.jpg",
     genres: ["Horror", "Sci-Fi"]
   },
 
@@ -51,7 +51,7 @@ export const movies = [
     release_year: 2003,
     duration_minutes: 120,
     director: "Park Chan-wook",
-    poster_url: "https://image.tmdb.org/t/p/w500/__PASTE_TMDB_POSTER_PATH__.jpg",
+    poster_url: "https://upload.wikimedia.org/wikipedia/en/6/67/Oldboykoreanposter.jpg",
     genres: ["Thriller"]
   },
   {
@@ -60,7 +60,7 @@ export const movies = [
     release_year: 1997,
     duration_minutes: 111,
     director: "Kiyoshi Kurosawa",
-    poster_url: "https://image.tmdb.org/t/p/w500/__PASTE_TMDB_POSTER_PATH__.jpg",
+    poster_url: "https://upload.wikimedia.org/wikipedia/en/b/bc/Cureposter.jpg",
     genres: ["Thriller"]
   },
   {
@@ -69,7 +69,7 @@ export const movies = [
     release_year: 1991,
     duration_minutes: 118,
     director: "Jonathan Demme",
-    poster_url: "https://image.tmdb.org/t/p/w500/__PASTE_TMDB_POSTER_PATH__.jpg",
+    poster_url: "https://upload.wikimedia.org/wikipedia/en/8/86/The_Silence_of_the_Lambs_poster.jpg",
     genres: ["Thriller", "Crime"]
   },
   {
@@ -78,7 +78,7 @@ export const movies = [
     release_year: 2000,
     duration_minutes: 102,
     director: "Mary Harron",
-    poster_url: "https://image.tmdb.org/t/p/w500/__PASTE_TMDB_POSTER_PATH__.jpg",
+    poster_url: "https://upload.wikimedia.org/wikipedia/en/0/0c/American_Psycho.png",
     genres: ["Thriller", "Crime"]
   },
   {
@@ -87,7 +87,7 @@ export const movies = [
     release_year: 2019,
     duration_minutes: 132,
     director: "Bong Joon-ho",
-    poster_url: "https://image.tmdb.org/t/p/w500/__PASTE_TMDB_POSTER_PATH__.jpg",
+    poster_url: "https://upload.wikimedia.org/wikipedia/en/5/53/Parasite_%282019_film%29.png",
     genres: ["Thriller", "Drama"]
   },
 
@@ -97,7 +97,7 @@ export const movies = [
     release_year: 1975,
     duration_minutes: 91,
     director: "Terry Gilliam & Terry Jones",
-    poster_url: "https://image.tmdb.org/t/p/w500/__PASTE_TMDB_POSTER_PATH__.jpg",
+    poster_url: "https://image.tmdb.org/t/p/w500/8AVb7tyxZRsbKJNOTJHQZl7JYWO.jpg",
     genres: ["Comedy"]
   },
   {
@@ -106,7 +106,7 @@ export const movies = [
     release_year: 2008,
     duration_minutes: 98,
     director: "Adam McKay",
-    poster_url: "https://image.tmdb.org/t/p/w500/__PASTE_TMDB_POSTER_PATH__.jpg",
+    poster_url: "https://upload.wikimedia.org/wikipedia/en/d/d9/StepbrothersMP08.jpg",
     genres: ["Comedy"]
   },
   {
@@ -115,7 +115,7 @@ export const movies = [
     release_year: 2012,
     duration_minutes: 109,
     director: "Phil Lord & Christopher Miller",
-    poster_url: "https://image.tmdb.org/t/p/w500/__PASTE_TMDB_POSTER_PATH__.jpg",
+    poster_url: "https://image.tmdb.org/t/p/w500/8v3SQE5b1w1TnC3yY2kQJ0C8xvy.jpg",
     genres: ["Comedy", "Action"]
   },
   {
@@ -124,7 +124,7 @@ export const movies = [
     release_year: 2009,
     duration_minutes: 100,
     director: "Todd Phillips",
-    poster_url: "https://image.tmdb.org/t/p/w500/__PASTE_TMDB_POSTER_PATH__.jpg",
+    poster_url: "https://upload.wikimedia.org/wikipedia/en/b/b9/Hangoverposter09.jpg",
     genres: ["Comedy"]
   },
   {
@@ -133,7 +133,7 @@ export const movies = [
     release_year: 2007,
     duration_minutes: 121,
     director: "Edgar Wright",
-    poster_url: "https://image.tmdb.org/t/p/w500/__PASTE_TMDB_POSTER_PATH__.jpg",
+    poster_url: "https://upload.wikimedia.org/wikipedia/en/c/c9/HotFuzzUKposter.jpg",
     genres: ["Comedy", "Action"]
   },
 
@@ -143,7 +143,7 @@ export const movies = [
     release_year: 1972,
     duration_minutes: 175,
     director: "Francis Ford Coppola",
-    poster_url: "https://image.tmdb.org/t/p/w500/__PASTE_TMDB_POSTER_PATH__.jpg",
+    poster_url: "https://upload.wikimedia.org/wikipedia/en/1/1c/Godfather_ver1.jpg",
     genres: ["Crime", "Drama"]
   },
   {
@@ -152,7 +152,7 @@ export const movies = [
     release_year: 1994,
     duration_minutes: 154,
     director: "Quentin Tarantino",
-    poster_url: "https://image.tmdb.org/t/p/w500/__PASTE_TMDB_POSTER_PATH__.jpg",
+    poster_url: "https://image.tmdb.org/t/p/w500/d5iIlFn5s0ImszYzBPb8JPIfbXD.jpg",
     genres: ["Crime"]
   },
   {
@@ -161,7 +161,7 @@ export const movies = [
     release_year: 2003,
     duration_minutes: 132,
     director: "Bong Joon-ho",
-    poster_url: "https://image.tmdb.org/t/p/w500/__PASTE_TMDB_POSTER_PATH__.jpg",
+    poster_url: "https://upload.wikimedia.org/wikipedia/en/0/01/Salinui-chueok-south-korean-movie-poster-md.jpg",
     genres: ["Crime", "Thriller"]
   },
   {
@@ -170,7 +170,7 @@ export const movies = [
     release_year: 1990,
     duration_minutes: 146,
     director: "Martin Scorsese",
-    poster_url: "https://image.tmdb.org/t/p/w500/__PASTE_TMDB_POSTER_PATH__.jpg",
+    poster_url: "https://upload.wikimedia.org/wikipedia/en/7/7b/Goodfellas.jpg",
     genres: ["Crime", "Drama"]
   },
   {
@@ -179,7 +179,7 @@ export const movies = [
     release_year: 1974,
     duration_minutes: 202,
     director: "Francis Ford Coppola",
-    poster_url: "https://image.tmdb.org/t/p/w500/__PASTE_TMDB_POSTER_PATH__.jpg",
+    poster_url: "https://upload.wikimedia.org/wikipedia/en/0/03/Godfather_part_ii.jpg",
     genres: ["Crime", "Drama"]
   },
 
@@ -189,7 +189,7 @@ export const movies = [
     release_year: 2023,
     duration_minutes: 180,
     director: "Christopher Nolan",
-    poster_url: "https://image.tmdb.org/t/p/w500/__PASTE_TMDB_POSTER_PATH__.jpg",
+    poster_url: "https://upload.wikimedia.org/wikipedia/en/4/4a/Oppenheimer_%28film%29.jpg",
     genres: ["Drama", "History"]
   },
   {
@@ -198,7 +198,7 @@ export const movies = [
     release_year: 2014,
     duration_minutes: 106,
     director: "Damien Chazelle",
-    poster_url: "https://image.tmdb.org/t/p/w500/__PASTE_TMDB_POSTER_PATH__.jpg",
+    poster_url: "https://upload.wikimedia.org/wikipedia/en/0/01/Whiplash_poster.jpg",
     genres: ["Drama"]
   },
   {
@@ -207,7 +207,7 @@ export const movies = [
     release_year: 2007,
     duration_minutes: 158,
     director: "Paul Thomas Anderson",
-    poster_url: "https://image.tmdb.org/t/p/w500/__PASTE_TMDB_POSTER_PATH__.jpg",
+    poster_url: "https://upload.wikimedia.org/wikipedia/en/d/da/There_Will_Be_Blood_Poster.jpg",
     genres: ["Drama"]
   },
   {
@@ -216,7 +216,7 @@ export const movies = [
     release_year: 1999,
     duration_minutes: 139,
     director: "David Fincher",
-    poster_url: "https://image.tmdb.org/t/p/w500/__PASTE_TMDB_POSTER_PATH__.jpg",
+    poster_url: "https://upload.wikimedia.org/wikipedia/en/f/fc/Fight_Club_poster.jpg",
     genres: ["Drama"]
   },
   {
@@ -225,7 +225,7 @@ export const movies = [
     release_year: 1976,
     duration_minutes: 114,
     director: "Martin Scorsese",
-    poster_url: "https://image.tmdb.org/t/p/w500/__PASTE_TMDB_POSTER_PATH__.jpg",
+    poster_url: "https://image.tmdb.org/t/p/w500/ekstpH614fwDX8DUln1a2Opz0N8.jpg",
     genres: ["Drama", "Crime"]
   },
 
@@ -235,7 +235,7 @@ export const movies = [
     release_year: 2017,
     duration_minutes: 120,
     director: "Tomonori Sudō",
-    poster_url: "https://image.tmdb.org/t/p/w500/__PASTE_TMDB_POSTER_PATH__.jpg",
+    poster_url: "https://upload.wikimedia.org/wikipedia/en/8/8c/Fate-stay_night_Heaven%27s_Feel_Poster.jpg",
     genres: ["Animation", "Fantasy", "Action"]
   },
   {
@@ -244,7 +244,7 @@ export const movies = [
     release_year: 2019,
     duration_minutes: 117,
     director: "Tomonori Sudō",
-    poster_url: "https://image.tmdb.org/t/p/w500/__PASTE_TMDB_POSTER_PATH__.jpg",
+    poster_url: "https://upload.wikimedia.org/wikipedia/en/e/ec/Lostbutterflyposter.png",
     genres: ["Animation", "Fantasy", "Action"]
   },
   {
@@ -253,7 +253,7 @@ export const movies = [
     release_year: 2020,
     duration_minutes: 122,
     director: "Tomonori Sudō",
-    poster_url: "https://image.tmdb.org/t/p/w500/__PASTE_TMDB_POSTER_PATH__.jpg",
+    poster_url: "https://upload.wikimedia.org/wikipedia/en/3/33/SpringSongPoster.jpg",
     genres: ["Animation", "Fantasy", "Action"]
   },
   {
@@ -262,7 +262,7 @@ export const movies = [
     release_year: 2025,
     duration_minutes: 0,
     director: "Tatsuya Yoshihara",
-    poster_url: "https://image.tmdb.org/t/p/w500/__PASTE_TMDB_POSTER_PATH__.jpg",
+    poster_url: "https://chainsawman.dog/movie_reze/assets/img/top/kv_visual1.jpg",
     genres: ["Animation", "Action"]
   },
   {
@@ -271,7 +271,7 @@ export const movies = [
     release_year: 1994,
     duration_minutes: 88,
     director: "Roger Allers & Rob Minkoff",
-    poster_url: "https://image.tmdb.org/t/p/w500/__PASTE_TMDB_POSTER_PATH__.jpg",
+    poster_url: "https://upload.wikimedia.org/wikipedia/en/3/3d/The_Lion_King_poster.jpg",
     genres: ["Animation", "Family"]
   },
   {
@@ -280,7 +280,7 @@ export const movies = [
     release_year: 2004,
     duration_minutes: 115,
     director: "Brad Bird",
-    poster_url: "https://image.tmdb.org/t/p/w500/__PASTE_TMDB_POSTER_PATH__.jpg",
+    poster_url: "https://image.tmdb.org/t/p/w500/2LqaLgk4Z226KkgPJuiOQ58wvrm.jpg",
     genres: ["Animation", "Family", "Action"]
   },
   {
@@ -289,7 +289,7 @@ export const movies = [
     release_year: 2007,
     duration_minutes: 111,
     director: "Brad Bird",
-    poster_url: "https://image.tmdb.org/t/p/w500/__PASTE_TMDB_POSTER_PATH__.jpg",
+    poster_url: "https://upload.wikimedia.org/wikipedia/en/5/50/RatatouillePoster.jpg",
     genres: ["Animation", "Family", "Comedy"]
   },
   {
@@ -298,7 +298,7 @@ export const movies = [
     release_year: 2009,
     duration_minutes: 100,
     director: "Henry Selick",
-    poster_url: "https://image.tmdb.org/t/p/w500/__PASTE_TMDB_POSTER_PATH__.jpg",
+    poster_url: "https://upload.wikimedia.org/wikipedia/en/7/74/Coraline_%282009%29_Teaser_Poster.jpg",
     genres: ["Animation", "Fantasy", "Horror"]
   },
   {
@@ -307,7 +307,7 @@ export const movies = [
     release_year: 1997,
     duration_minutes: 93,
     director: "Ron Clements & John Musker",
-    poster_url: "https://image.tmdb.org/t/p/w500/__PASTE_TMDB_POSTER_PATH__.jpg",
+    poster_url: "https://upload.wikimedia.org/wikipedia/en/thumb/6/65/Hercules_%281997_film%29_poster.jpg/250px-Hercules_%281997_film%29_poster.jpg",
     genres: ["Animation", "Family", "Comedy"]
   },
   {
@@ -316,7 +316,7 @@ export const movies = [
     release_year: 2019,
     duration_minutes: 111,
     director: "Hiroyuki Imaishi",
-    poster_url: "https://image.tmdb.org/t/p/w500/__PASTE_TMDB_POSTER_PATH__.jpg",
+    poster_url: "https://image.tmdb.org/t/p/w500/6R8zjP8LZKp5pYzJp8Z5QZkZzP.jpg",
     genres: ["Animation", "Action", "Sci-Fi"]
   },
 
@@ -326,7 +326,7 @@ export const movies = [
     release_year: 2022,
     duration_minutes: 187,
     director: "S. S. Rajamouli",
-    poster_url: "https://image.tmdb.org/t/p/w500/__PASTE_TMDB_POSTER_PATH__.jpg",
+    poster_url: "https://upload.wikimedia.org/wikipedia/en/d/d7/RRR_Poster.jpg",
     genres: ["Action", "Drama"]
   },
   {
@@ -335,7 +335,7 @@ export const movies = [
     release_year: 2014,
     duration_minutes: 101,
     director: "Chad Stahelski",
-    poster_url: "https://image.tmdb.org/t/p/w500/__PASTE_TMDB_POSTER_PATH__.jpg",
+    poster_url: "https://upload.wikimedia.org/wikipedia/en/9/98/John_Wick_TeaserPoster.jpg",
     genres: ["Action", "Crime"]
   },
   {
@@ -344,7 +344,7 @@ export const movies = [
     release_year: 2019,
     duration_minutes: 122,
     director: "Robert Rodriguez",
-    poster_url: "https://image.tmdb.org/t/p/w500/__PASTE_TMDB_POSTER_PATH__.jpg",
+    poster_url: "https://image.tmdb.org/t/p/w500/xRWht48C2V8XNfzvPehyClOvDni.jpg",
     genres: ["Action", "Sci-Fi"]
   },
   {
@@ -353,7 +353,7 @@ export const movies = [
     release_year: 2022,
     duration_minutes: 108,
     director: "Mike Cheslik",
-    poster_url: "https://image.tmdb.org/t/p/w500/__PASTE_TMDB_POSTER_PATH__.jpg",
+    poster_url: "https://upload.wikimedia.org/wikipedia/en/5/5e/Hundreds_of_Beavers_poster.jpg",
     genres: ["Action", "Comedy"]
   },
   {
@@ -362,7 +362,7 @@ export const movies = [
     release_year: 2015,
     duration_minutes: 120,
     director: "George Miller",
-    poster_url: "https://image.tmdb.org/t/p/w500/__PASTE_TMDB_POSTER_PATH__.jpg",
+    poster_url: "https://upload.wikimedia.org/wikipedia/en/6/6e/Mad_Max_Fury_Road.jpg",
     genres: ["Action", "Adventure"]
   },
 
@@ -372,7 +372,7 @@ export const movies = [
     release_year: 1981,
     duration_minutes: 115,
     director: "Steven Spielberg",
-    poster_url: "https://image.tmdb.org/t/p/w500/__PASTE_TMDB_POSTER_PATH__.jpg",
+    poster_url: "https://image.tmdb.org/t/p/w500/ceG9VzoRAVGwivFU403Wc3AHRys.jpg",
     genres: ["Adventure", "Action"]
   },
   {
@@ -381,7 +381,7 @@ export const movies = [
     release_year: 2002,
     duration_minutes: 95,
     director: "Ron Clements & John Musker",
-    poster_url: "https://image.tmdb.org/t/p/w500/__PASTE_TMDB_POSTER_PATH__.jpg",
+    poster_url: "https://upload.wikimedia.org/wikipedia/en/7/7e/Treasure_Planet_poster.jpg",
     genres: ["Adventure", "Animation", "Sci-Fi"]
   },
   {
@@ -390,7 +390,7 @@ export const movies = [
     release_year: 1995,
     duration_minutes: 104,
     director: "Joe Johnston",
-    poster_url: "https://image.tmdb.org/t/p/w500/__PASTE_TMDB_POSTER_PATH__.jpg",
+    poster_url: "https://upload.wikimedia.org/wikipedia/en/b/b6/Jumanji_poster.jpg",
     genres: ["Adventure", "Family"]
   },
   {
@@ -399,7 +399,7 @@ export const movies = [
     release_year: 1985,
     duration_minutes: 116,
     director: "Robert Zemeckis",
-    poster_url: "https://image.tmdb.org/t/p/w500/__PASTE_TMDB_POSTER_PATH__.jpg",
+    poster_url: "https://upload.wikimedia.org/wikipedia/en/d/d2/Back_to_the_Future.jpg",
     genres: ["Adventure", "Sci-Fi"]
   },
   {
@@ -408,7 +408,7 @@ export const movies = [
     release_year: 1999,
     duration_minutes: 124,
     director: "Stephen Sommers",
-    poster_url: "https://image.tmdb.org/t/p/w500/__PASTE_TMDB_POSTER_PATH__.jpg",
+    poster_url: "https://upload.wikimedia.org/wikipedia/en/thumb/6/68/The_mummy.jpg/250px-The_mummy.jpg",
     genres: ["Adventure", "Action"]
   },
 
@@ -418,7 +418,7 @@ export const movies = [
     release_year: 2002,
     duration_minutes: 150,
     director: "Roman Polanski",
-    poster_url: "https://image.tmdb.org/t/p/w500/__PASTE_TMDB_POSTER_PATH__.jpg",
+    poster_url: "https://upload.wikimedia.org/wikipedia/en/a/a6/The_Pianist_movie.jpg",
     genres: ["Drama", "War"]
   },
   {
@@ -427,7 +427,7 @@ export const movies = [
     release_year: 1993,
     duration_minutes: 195,
     director: "Steven Spielberg",
-    poster_url: "https://image.tmdb.org/t/p/w500/__PASTE_TMDB_POSTER_PATH__.jpg",
+    poster_url: "https://upload.wikimedia.org/wikipedia/en/3/38/Schindler%27s_List_movie.jpg",
     genres: ["Drama", "History", "War"]
   },
   {
@@ -436,7 +436,7 @@ export const movies = [
     release_year: 1985,
     duration_minutes: 142,
     director: "Elem Klimov",
-    poster_url: "https://image.tmdb.org/t/p/w500/__PASTE_TMDB_POSTER_PATH__.jpg",
+    poster_url: "https://upload.wikimedia.org/wikipedia/en/0/08/Come_and_See_%28poster%29.jpg",
     genres: ["War", "Drama"]
   },
   {
@@ -445,7 +445,7 @@ export const movies = [
     release_year: 2006,
     duration_minutes: 117,
     director: "Zack Snyder",
-    poster_url: "https://image.tmdb.org/t/p/w500/__PASTE_TMDB_POSTER_PATH__.jpg",
+    poster_url: "https://upload.wikimedia.org/wikipedia/en/5/5c/300poster.jpg",
     genres: ["Action", "War"]
   },
   {
@@ -454,7 +454,7 @@ export const movies = [
     release_year: 2009,
     duration_minutes: 153,
     director: "Quentin Tarantino",
-    poster_url: "https://image.tmdb.org/t/p/w500/__PASTE_TMDB_POSTER_PATH__.jpg",
+    poster_url: "https://upload.wikimedia.org/wikipedia/en/c/c3/Inglourious_Basterds_poster.jpg",
     genres: ["War", "Drama"]
   },
 
@@ -464,7 +464,7 @@ export const movies = [
     release_year: 2021,
     duration_minutes: 155,
     director: "Denis Villeneuve",
-    poster_url: "https://image.tmdb.org/t/p/w500/__PASTE_TMDB_POSTER_PATH__.jpg",
+    poster_url: "https://upload.wikimedia.org/wikipedia/en/8/8e/Dune_%282021_film%29.jpg",
     genres: ["Sci-Fi", "Adventure"]
   },
 
@@ -483,7 +483,7 @@ export const movies = [
     release_year: 2002,
     duration_minutes: 142,
     director: "George Lucas",
-    poster_url: "https://image.tmdb.org/t/p/w500/2vcNFtrZXNwIcBgH5e2xXCmVR8t.jpg",
+    poster_url: "https://upload.wikimedia.org/wikipedia/en/3/32/Star_Wars_-_Episode_II_Attack_of_the_Clones_%28movie_poster%29.jpg",
     genres: ["Sci-Fi", "Adventure"]
   },
   {
@@ -510,7 +510,7 @@ export const movies = [
     release_year: 1980,
     duration_minutes: 124,
     director: "Irvin Kershner",
-    poster_url: "https://image.tmdb.org/t/p/w500/__PASTE_TMDB_POSTER_PATH__.jpg",
+    poster_url: "https://upload.wikimedia.org/wikipedia/en/thumb/3/3f/The_Empire_Strikes_Back_%281980_film%29.jpg/250px-The_Empire_Strikes_Back_%281980_film%29.jpg",
     genres: ["Sci-Fi", "Adventure"]
   },
   {
@@ -519,7 +519,7 @@ export const movies = [
     release_year: 1983,
     duration_minutes: 131,
     director: "Richard Marquand",
-    poster_url: "https://image.tmdb.org/t/p/w500/__PASTE_TMDB_POSTER_PATH__.jpg",
+    poster_url: "https://upload.wikimedia.org/wikipedia/en/b/b2/ReturnOfTheJediPoster1983.jpg",
     genres: ["Sci-Fi", "Adventure"]
   },
 
@@ -529,7 +529,7 @@ export const movies = [
     release_year: 2014,
     duration_minutes: 169,
     director: "Christopher Nolan",
-    poster_url: "https://image.tmdb.org/t/p/w500/__PASTE_TMDB_POSTER_PATH__.jpg",
+    poster_url: "https://upload.wikimedia.org/wikipedia/en/b/bc/Interstellar_film_poster.jpg",
     genres: ["Sci-Fi", "Drama"]
   },
   {
@@ -538,7 +538,7 @@ export const movies = [
     release_year: 2022,
     duration_minutes: 139,
     director: "Daniel Kwan & Daniel Scheinert",
-    poster_url: "https://image.tmdb.org/t/p/w500/__PASTE_TMDB_POSTER_PATH__.jpg",
+    poster_url: "https://upload.wikimedia.org/wikipedia/en/1/1e/Everything_Everywhere_All_at_Once.jpg",
     genres: ["Sci-Fi", "Comedy"]
   },
   {
@@ -547,7 +547,7 @@ export const movies = [
     release_year: 1997,
     duration_minutes: 98,
     director: "Barry Sonnenfeld",
-    poster_url: "https://image.tmdb.org/t/p/w500/__PASTE_TMDB_POSTER_PATH__.jpg",
+    poster_url: "https://upload.wikimedia.org/wikipedia/en/f/fb/Men_in_Black_Poster.jpg",
     genres: ["Sci-Fi", "Comedy"]
   },
 
@@ -557,26 +557,18 @@ export const movies = [
     release_year: 1975,
     duration_minutes: 100,
     director: "Jim Sharman",
-    poster_url: "https://image.tmdb.org/t/p/w500/__PASTE_TMDB_POSTER_PATH__.jpg",
+    poster_url: "https://image.tmdb.org/t/p/w500/3pyE6ZqDbuJi7zrNzzQzcKTWdmN.jpg",
     genres: ["Music", "Comedy"]
   },
 
-  {
-    title: "Fate/stay night",
-    description: "A teen mage is pulled into the Holy Grail War.",
-    release_year: 2006,
-    duration_minutes: 0,
-    director: "TODO",
-    poster_url: "https://image.tmdb.org/t/p/w500/__PASTE_TMDB_POSTER_PATH__.jpg",
-    genres: ["Romance", "Fantasy"]
-  },
+  
   {
     title: "Your Name.",
     description: "Two teens mysteriously swap lives and race fate.",
     release_year: 2016,
     duration_minutes: 106,
     director: "Makoto Shinkai",
-    poster_url: "https://image.tmdb.org/t/p/w500/__PASTE_TMDB_POSTER_PATH__.jpg",
+    poster_url: "https://upload.wikimedia.org/wikipedia/en/0/0b/Your_Name_poster.png",
     genres: ["Romance", "Animation", "Drama"]
   },
   {
@@ -585,7 +577,7 @@ export const movies = [
     release_year: 2004,
     duration_minutes: 108,
     director: "Michel Gondry",
-    poster_url: "https://image.tmdb.org/t/p/w500/__PASTE_TMDB_POSTER_PATH__.jpg",
+    poster_url: "https://image.tmdb.org/t/p/w500/5MwkWH9tYHv3mV9OdYTMR5qreIz.jpg",
     genres: ["Romance", "Drama", "Sci-Fi"]
   },
   {
@@ -594,7 +586,7 @@ export const movies = [
     release_year: 1987,
     duration_minutes: 98,
     director: "Rob Reiner",
-    poster_url: "https://image.tmdb.org/t/p/w500/__PASTE_TMDB_POSTER_PATH__.jpg",
+    poster_url: "https://upload.wikimedia.org/wikipedia/en/d/db/Princess_bride.jpg",
     genres: ["Romance", "Adventure", "Comedy"]
   },
   {
@@ -603,7 +595,7 @@ export const movies = [
     release_year: 2016,
     duration_minutes: 130,
     director: "Naoko Yamada",
-    poster_url: "https://image.tmdb.org/t/p/w500/__PASTE_TMDB_POSTER_PATH__.jpg",
+    poster_url: "https://image.tmdb.org/t/p/w500/tuFaWiqX0TXoWu7DGNcmX3UW7sT.jpg",
     genres: ["Romance", "Animation", "Drama"]
   },
 
@@ -613,7 +605,7 @@ export const movies = [
     release_year: 2011,
     duration_minutes: 107,
     director: "Gore Verbinski",
-    poster_url: "https://image.tmdb.org/t/p/w500/__PASTE_TMDB_POSTER_PATH__.jpg",
+    poster_url: "https://upload.wikimedia.org/wikipedia/en/6/6d/Rango2011Poster.jpg",
     genres: ["Western", "Animation", "Comedy"]
   },
   {
@@ -622,7 +614,7 @@ export const movies = [
     release_year: 2012,
     duration_minutes: 165,
     director: "Quentin Tarantino",
-    poster_url: "https://image.tmdb.org/t/p/w500/__PASTE_TMDB_POSTER_PATH__.jpg",
+    poster_url: "https://upload.wikimedia.org/wikipedia/en/8/8b/Django_Unchained_Poster.jpg",
     genres: ["Western", "Drama"]
   },
   {
@@ -631,7 +623,7 @@ export const movies = [
     release_year: 1966,
     duration_minutes: 161,
     director: "Sergio Leone",
-    poster_url: "https://image.tmdb.org/t/p/w500/__PASTE_TMDB_POSTER_PATH__.jpg",
+    poster_url: "https://upload.wikimedia.org/wikipedia/en/4/45/Good_the_bad_and_the_ugly_poster.jpg",
     genres: ["Western"]
   },
   {
@@ -640,7 +632,7 @@ export const movies = [
     release_year: 1948,
     duration_minutes: 126,
     director: "John Huston",
-    poster_url: "https://image.tmdb.org/t/p/w500/__PASTE_TMDB_POSTER_PATH__.jpg",
+    poster_url: "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1d/The_Treasure_of_the_Sierra_Madre_%281947_poster%29.jpg/250px-The_Treasure_of_the_Sierra_Madre_%281947_poster%29.jpg",
     genres: ["Western", "Adventure", "Drama"]
   },
   {
@@ -649,7 +641,7 @@ export const movies = [
     release_year: 2007,
     duration_minutes: 122,
     director: "Joel Coen & Ethan Coen",
-    poster_url: "https://image.tmdb.org/t/p/w500/__PASTE_TMDB_POSTER_PATH__.jpg",
+    poster_url: "https://upload.wikimedia.org/wikipedia/en/8/8b/No_Country_for_Old_Men_poster.jpg",
     genres: ["Western", "Crime", "Thriller"]
   },
 
@@ -659,7 +651,7 @@ export const movies = [
     release_year: 2024,
     duration_minutes: 0,
     director: "Chris Sanders",
-    poster_url: "https://image.tmdb.org/t/p/w500/__PASTE_TMDB_POSTER_PATH__.jpg",
+    poster_url: "https://upload.wikimedia.org/wikipedia/en/thumb/7/70/The_Wild_Robot_poster.jpg/250px-The_Wild_Robot_poster.jpg",
     genres: ["Family", "Animation"]
   },
   {
@@ -668,7 +660,7 @@ export const movies = [
     release_year: 2001,
     duration_minutes: 90,
     director: "Andrew Adamson & Vicky Jenson",
-    poster_url: "https://image.tmdb.org/t/p/w500/__PASTE_TMDB_POSTER_PATH__.jpg",
+    poster_url: "https://image.tmdb.org/t/p/w500/iB64vpL3dIObOtMZgX3RqdVdQDc.jpg",
     genres: ["Family", "Animation", "Comedy"]
   },
   {
@@ -677,7 +669,7 @@ export const movies = [
     release_year: 2020,
     duration_minutes: 99,
     director: "Jeff Fowler",
-    poster_url: "https://image.tmdb.org/t/p/w500/__PASTE_TMDB_POSTER_PATH__.jpg",
+    poster_url: "https://image.tmdb.org/t/p/w500/aQvJ5WPzZgYVDrxLX4R6cLJCEaQ.jpg",
     genres: ["Family", "Adventure"]
   },
   {
@@ -686,7 +678,7 @@ export const movies = [
     release_year: 1999,
     duration_minutes: 86,
     director: "Brad Bird",
-    poster_url: "https://image.tmdb.org/t/p/w500/__PASTE_TMDB_POSTER_PATH__.jpg",
+    poster_url: "https://upload.wikimedia.org/wikipedia/en/d/d3/The_Iron_Giant_poster.JPG",
     genres: ["Family", "Animation", "Sci-Fi"]
   },
   {
@@ -695,7 +687,7 @@ export const movies = [
     release_year: 2002,
     duration_minutes: 81,
     director: "Chris Wedge",
-    poster_url: "https://image.tmdb.org/t/p/w500/__PASTE_TMDB_POSTER_PATH__.jpg",
+    poster_url: "https://upload.wikimedia.org/wikipedia/en/3/3c/Ice_Age_%282002_film%29_poster.jpg",
     genres: ["Family", "Animation", "Comedy"]
   },
 
@@ -714,7 +706,7 @@ export const movies = [
     release_year: 2002,
     duration_minutes: 179,
     director: "Peter Jackson",
-    poster_url: "https://image.tmdb.org/t/p/w500/__PASTE_TMDB_POSTER_PATH__.jpg",
+    poster_url: "https://image.tmdb.org/t/p/w500/5VTN0pR8gcqV3EPUHHfMGnJYN9L.jpg",
     genres: ["Fantasy", "Adventure"]
   },
   {
@@ -723,7 +715,7 @@ export const movies = [
     release_year: 2003,
     duration_minutes: 201,
     director: "Peter Jackson",
-    poster_url: "https://image.tmdb.org/t/p/w500/__PASTE_TMDB_POSTER_PATH__.jpg",
+    poster_url: "https://image.tmdb.org/t/p/w500/rCzpDGLbOoPwLjy3OAm5NUPOTrC.jpg",
     genres: ["Fantasy", "Adventure"]
   }
 ];

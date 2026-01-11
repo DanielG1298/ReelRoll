@@ -2,6 +2,7 @@ import { useNavigate } from "react-router-dom";
 import { useEffect,useState } from "react";
 import { getMovies, getMoviesByGenre } from "../api/movieApi.js";
 import { getGenres} from "../api/genreApi.js";
+import "../CSS/movies.css";
 export default function MoviesPage(){
 const [movies, setMovies] = useState([]);
 const [genres, setGenres] = useState([]);
@@ -30,13 +31,14 @@ useEffect (() => {
 [selectedGenre]);
 
 
+if (!movies) return <p>Loading...</p>;
 
     return(
         <>
-        <section>
+        <section className="movies-page">
             <h2>Movies</h2>
-            <div>
-            <label>
+            <div className="movies-sidebar">
+            <label className="genre-filter">
                 Filter by Genre:{" "}
                 <select value={selectedGenre}
                 onChange={(event) => setSelectedGenre(event.target.value)}>

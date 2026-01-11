@@ -10,7 +10,7 @@ export default function registerPage(){
     const tryRegister = async (event) => {
     event.preventDefault();
     setError(null);
-    const formData = new FormData(event.target);
+    const formData = new FormData(event.currentTarget);
     const username = formData.get("username");
     const email = formData.get("email");
     const password = formData.get("password");
@@ -32,15 +32,15 @@ export default function registerPage(){
         <form className="register-form" onSubmit={tryRegister}>
         <label className="register-label">
         Username
-        <input className="register-input"type="text" name="Username" required/>
+        <input className="register-input"type="text" name="username" required/>
         </label>
         <label className="register-label">
-        Email<input className="register-input" type="text" name="Email" required/>
+        Email<input className="register-input" type="text" name="email" required/>
         </label>
         <label className="register-label">
-        Password<input className="register-input" type="password" name="Password" required/>
+        Password<input className="register-input" type="password" name="password" required/>
         </label>
-        <button ClassName="register-button">Register</button>    
+        <button className="register-button">Register</button>    
         </form>
         </section>
         </main>

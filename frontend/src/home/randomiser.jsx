@@ -66,7 +66,7 @@ const displayed = random.slice(0, reqCount);
                     <div key={movies.id}
                      className="randomMovieCard"
                       onClick={() => navigate(`/movies/${movies.id}`)}>
-                    <img src ={movies.posterUrl} alt={movies.title} />
+                    <img src ={movies.poster_url} alt={movies.title} />
                     <h3>{movies.title}</h3>
                     </div>
                 ))}

@@ -63,7 +63,7 @@ export default function AuthProvider({ children }) {
     return response.json();
   };
 
-  // logout func (✅ FIXED)
+  // logout func 
   const logout = () => {
     setToken(null);
     localStorage.removeItem("token");
@@ -71,7 +71,7 @@ export default function AuthProvider({ children }) {
 
   // auth context
   const value = { token, register, login, account, logout };
-console.log("VITE_API =", import.meta.env.VITE_API);
+
 
   return <AuthContext.Provider value={value}>{children}</AuthContext.Provider>;
 }

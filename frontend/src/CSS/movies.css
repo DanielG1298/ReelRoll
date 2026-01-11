@@ -1,0 +1,132 @@
+/* ===== Movies Page Layout ===== */
+.movies-layout {
+  display: grid;
+  grid-template-columns: 240px 1fr; /* left filter column + main grid */
+  gap: 24px;
+  align-items: start;
+  padding: 16px;
+
+  /* Match Randomiser "wrapper" feel */
+  margin-top: 32px;
+  width: min(1100px, 100%);
+  margin-left: auto;
+  margin-right: auto;
+
+  background: rgba(255, 255, 255, 0.04);
+  border-radius: 14px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+/* ===== Sidebar ===== */
+.movies-sidebar {
+  position: sticky;
+  top: 16px;
+
+  padding: 14px;
+  border-radius: 14px;
+
+  /* Match Randomiser card feel */
+  background: rgba(0, 0, 0, 0.20);
+  border: 1px solid rgba(255, 255, 255, 0.10);
+}
+
+.movies-sidebar label {
+  display: block;
+  font-size: 1rem;
+  font-weight: 700;
+  margin-bottom: 8px;
+  opacity: 0.95;
+}
+
+.movies-sidebar select {
+  width: 100%;
+  padding: 10px 12px;
+  border-radius: 10px;
+
+  border: 1px solid rgba(255, 255, 255, 0.20);
+  background: #0b1220; /* same as randomiser select */
+  color: #e5e7eb;
+  outline: none;
+}
+
+.movies-sidebar select:focus {
+  border-color: rgba(255, 255, 255, 0.32);
+}
+
+/* ===== 3x3 Grid ===== */
+.movie-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr)); /* force 3 columns */
+  gap: 20px; /* closer to Randomiser spacing */
+}
+
+/* responsive: drop to 2 then 1 on smaller screens */
+@media (max-width: 980px) {
+  .movies-layout {
+    grid-template-columns: 1fr;
+  }
+  .movie-list {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  .movies-sidebar {
+    position: static;
+  }
+}
+
+@media (max-width: 640px) {
+  .movie-list {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* ===== Movie Card ===== */
+.movie-card {
+  cursor: pointer;
+  text-align: center;
+
+  /* Match Randomiser movie cards */
+  background: rgba(0, 0, 0, 0.20);
+  border-radius: 14px;
+  padding: 12px;
+
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+}
+
+.movie-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.40);
+  border-color: rgba(255, 255, 255, 0.14);
+}
+
+/* Poster */
+/* Poster — restored to original size */
+.movie-card img {
+  width: 150px;
+  height: 200px;
+
+  display: block;
+  margin: 0 auto 12px;
+
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+
+/* title then director */
+.movie-card h3 {
+  margin: 10px 0 6px;
+  font-size: 1.05rem;
+  font-weight: 800;
+  line-height: 1.2;
+}
+
+.movie-card p {
+  margin: 0;
+  opacity: 0.88;
+  font-size: 0.95rem;
+}

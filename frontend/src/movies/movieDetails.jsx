@@ -4,6 +4,7 @@ import {useState,useEffect} from "react";
 import { useAuth } from "../auth/auth.jsx";
 import { useParams} from "react-router-dom";
 import  ReviewsTab  from "../reviews/reviews.jsx";
+import "../CSS/moviesDetails.css";
 //shows the details of the selected movie
 
 export default function MovieDetails(){
@@ -55,23 +56,25 @@ if (!movies) return <p>Loading...</p>;
 
     return(
         <>
-        <div>
-            <h1>Movie Details</h1>
+        <div className="movie-details-div">
+            <h1 className="movie-title">{movies.title}</h1>
             <img className="details-cover" src={movies.poster_url} alt={`${movies.title} poster`}/>
-            <h2>{movies.title} </h2>
-            <p>{movies.description}</p>
-            <h3>{movies.release_year}</h3>
-            <h3>{movies.genre}</h3>
-            <h3>{movies.duration_minutes} minutes</h3>
+            <h2>Directed by:{movies.director}</h2>
+            <div className="movie-info">
+            <p>Description: {movies.description}</p>
+            <h3>Release Year:{movies.release_year}</h3>
+            <h3>Runtime: {movies.genre}</h3>
+            <h3>{movies.duration_minutes} Minutes</h3>
+            </div>
         </div>
-        <div>
+        <div className="favorites-section">
             {token ? (
                 <button onClick={FavoriteHandler}>
                 {isFav ? "Remove from Favorites" : "Add to Favorites"}
                 </button>) : (<p>Login to manage favorites</p>
             )}
         </div>
-        <div>
+        <div className="reviews-section">
         <ReviewsTab movieId ={id}/>
         </div>
         

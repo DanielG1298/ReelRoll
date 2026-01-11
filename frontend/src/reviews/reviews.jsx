@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { useAuth } from "../auth/auth.jsx";
 import { getReviewsByMovie, createReview,getUserReviews,updateReview,deleteReview } from "../api/reviewApi.js";
-
+import "../CSS/reviews.css";
 export default function ReviewsTab( {movieId} ){
     
     const [editingId, setEditingId] = useState(null);
@@ -68,8 +68,8 @@ export default function ReviewsTab( {movieId} ){
       <h2>Reviews</h2>
 
       {token && (
-        <form onSubmit={handleSubmitReview}>
-          <label>
+        <form className="create-Review-form" onSubmit={handleSubmitReview}>
+          <label className="rating-label">
             Rating:
             <input
               type="number"
@@ -81,7 +81,7 @@ export default function ReviewsTab( {movieId} ){
             />
           </label>
 
-          <label>
+          <label className="comment-label">
             Comment:
             <textarea
               value={comment}
@@ -99,15 +99,15 @@ export default function ReviewsTab( {movieId} ){
       {review.length === 0 ? (
         <p>No Reviews yet.</p>
       ) : (
-        <ul>
+        <ul className="reviews-list">
           {review.map((r) => (
             <li key={r.id}>
-              <strong>{r.username}</strong>
+              <strong className="username">{r.username}</strong>
 
               {editingId === r.id ? (
                 <>
-                  <div>
-                    <label>
+                  <div className="edit-rating-form">
+                    <label className="rating-label">
                       Rating:
                       <input
                         type="number"
@@ -121,7 +121,7 @@ export default function ReviewsTab( {movieId} ){
                   </div>
 
                   <div>
-                    <label>
+                    <label className="comment-label">
                       Comment:
                       <textarea value={editComment}
                         onChange={(e) => setEditComment(e.target.value)}
@@ -132,7 +132,7 @@ export default function ReviewsTab( {movieId} ){
 
                   {token && (
                     <>
-                      <button
+                      <button className="save-button"
                         type="button"
                         onClick={() => {
                           handleUpdateReview(r.id, Number(editRating),editComment);
@@ -143,7 +143,8 @@ export default function ReviewsTab( {movieId} ){
                         }}>Save</button>
                         
                         // cancel edit
-                      <button type="button"
+                      <button className="cancel-button"
+                      type="button"
                         onClick={() => {
                           
                           setEditingId(null);
@@ -151,7 +152,8 @@ export default function ReviewsTab( {movieId} ){
                           setEditComment("");
                         }}>Cancel</button>
 
-                      <button
+                      <button 
+                      className="delete-button"
                         type="button"
                         onClick={() => {
                           handleDeleteReview(r.id);

@@ -26,7 +26,7 @@ const tryLogin = async(event) =>{
                 <input className="login-input" type = "text" name="username" required/> 
             </label>
             <label className="password">
-                Password<input className="login-input" type = "password" name="password" required/>
+                Password <input className="login-input" type = "password" name="password" required/>
             </label>
             <button className="login-button">Login</button>
         </form>
