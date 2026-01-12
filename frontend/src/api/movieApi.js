@@ -7,7 +7,7 @@ export async function getMovies() {
     const result = await response.json();
     return result;
   } catch (error) {
-    console.error(error);
+    console.error("Error fetching movies:", error);
   }
   return [];
 }
@@ -19,7 +19,7 @@ export async function getMovieById(id) {
     const result = await response.json();
     return result;
   } catch (err) {
-    console.error(err);
+    console.error("Error fetching movie by ID:", err);
   }
   return null;
 }
@@ -31,7 +31,7 @@ export async function getMoviesByGenre(genre) {
     const result = await response.json();
     return result;
   } catch (err) {
-    console.error(err);
+    console.error("Error fetching movies by genre:", err);
   }
   return [];
 }
@@ -43,7 +43,7 @@ export async function getRandomMovies() {
     const result = await response.json();
     return result;
   } catch (err) {
-    console.error(err);
+    console.error("Error fetching random movies:", err);
   }
   return [];
 }
@@ -53,10 +53,10 @@ export async function getRandomMoviesByGenre(genre) {
   try {
     const response = await fetch(api("/movies/random/genre/" + genre));
     const result = await response.json();
-    console.log(result);
+    
     return result;
   } catch (err) {
-    console.error(err);
+    console.error("Error fetching random movies by genre:", err);
   }
   return [];
 }

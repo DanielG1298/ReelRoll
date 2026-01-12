@@ -48,7 +48,7 @@
   background: rgba(255, 255, 255, 0.10);
 }
 
-/* 3-movie grid */
+
 .random-grid {
   margin-top: 18px;
   display: grid;
@@ -70,7 +70,7 @@
   font-weight: 700; 
 }
 
-/* poster sizing: fits 3 across */
+
 .movie-poster {
   width: 100%;
   aspect-ratio: 2 / 3;
@@ -78,9 +78,19 @@
   border-radius: 10px;
 }
 
-/* Responsive */
+
 @media (max-width: 900px) {
   .random-grid {
     grid-template-columns: 1fr;
   }
+}
+.home-logo {
+  height: 120px;          
+  max-width: 100%;
+  object-fit: contain;
+  border-radius: 14px;
+  opacity: 0.95;
+
+  
+  filter: drop-shadow(0 8px 30px rgba(0, 0, 0, 0.5));
 }

@@ -1,4 +1,4 @@
-/* Wrapper */
+
 .ReelRollRandomiser {
   margin-top: 32px;
   padding: 24px;
@@ -11,7 +11,7 @@
   border: 1px solid rgba(255, 255, 255, 0.08);
 }
 
-/* Header */
+
 .ReelRollRandomiser h2 {
   margin: 0;
   font-size: 2rem;          
@@ -27,7 +27,7 @@
   margin-top: 8px;
 }
 
-/* Controls */
+
 .randomiserControls {
   margin-top: 20px;
   display: flex;
@@ -48,7 +48,7 @@
   color: #e5e7eb;
 }
 
-/* Buttons */
+
 .randomiserButtons {
   margin-top: 16px;
   display: flex;
@@ -72,7 +72,7 @@
   background: rgba(255, 255, 255, 0.15);
 }
 
-/* Results grid */
+
 .RandomResults {
   margin-top: 24px;
   display: grid;
@@ -80,7 +80,7 @@
   gap: 20px;
 }
 
-/* Movie cards */
+
 .randomMovieCard {
   cursor: pointer;
   text-align: center;
@@ -96,7 +96,7 @@
   box-shadow: 0 8px 30px rgba(0, 0, 0, 0.4);
 }
 
-/* Poster */
+
 .randomMovieCard img {
   width: 100%;
   aspect-ratio: 2 / 3;      
@@ -104,14 +104,14 @@
   border-radius: 10px;
 }
 
-/* Title */
+
 .randomMovieCard h3 {
   margin-top: 10px;
   font-size: 1.05rem;       
   font-weight: 800;
 }
 
-/* Responsive fallback */
+
 @media (max-width: 900px) {
   .RandomResults {
     grid-template-columns: 1fr;

@@ -17,7 +17,7 @@ export default function AccountPage(){
         const fetchAccount = async() =>{
             try{
             const data = await account();
-            console.log("Account data:", data);
+            
             setUser(data);
             
     //favorites data fetch 

@@ -1,5 +1,6 @@
 import { NavLink } from "react-router-dom";
 import "./navbar.css"
+import reelRollLogo from "../logo/reelrolllogo.png"
 export default function NavBar(){
     return(
     <>
@@ -7,7 +8,11 @@ export default function NavBar(){
 
         <div className="nav-left"/>
         
-        <h1 className="title">ReelRoll</h1>
+        <img
+          src={reelRollLogo}
+          alt="ReelRoll logo"
+          className="logo"
+        />
         <nav className="navlinks">
             <NavLink to='/'>Home</NavLink>
             <NavLink to='/movies'>Movies</NavLink>

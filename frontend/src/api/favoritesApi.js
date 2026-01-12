@@ -17,7 +17,7 @@ export async function getFavorites(token) {
     const result = await response.json();
     return result;
   } catch (err) {
-    console.error(err);
+    console.error("Error fetching favorites:", err);
     return null;
   }
 }

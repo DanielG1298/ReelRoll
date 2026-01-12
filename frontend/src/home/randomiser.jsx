@@ -36,6 +36,8 @@ try{
 //displayed movie count 
 const displayed = random.slice(0, reqCount);
 
+
+
     return(
         <>
         <section className="ReelRollRandomiser">

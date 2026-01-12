@@ -5,10 +5,10 @@ export async function getGenres() {
   try {
     const response = await fetch(api("/genre"));
     const result = await response.json();
-    console.log("Fetched genres:", result);
+    
     return result;
   } catch (err) {
-    console.error(err);
+    console.error("Error fetching genres:", err);
   }
   return [];
 }
@@ -20,7 +20,7 @@ export async function getGenreById(id) {
     const result = await response.json();
     return result;
   } catch (err) {
-    console.error(err);
+    console.error("Error fetching genre by ID:", err);
   }
   return null;
 }

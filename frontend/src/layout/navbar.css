@@ -6,38 +6,52 @@
   height: 70px;
   padding: 0 24px;
 
-  background-color: #0f172a; /* dark */
+  background-color: #0f172a; 
   color: white;
-  
 }
 
-/* Center title/logo */
-.title {
-  margin: 0;
-  font-size: 1.75rem;
-  text-align: center;
+
+.nav-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-/* Right-side nav links */
+
+.logo {
+  height: 55px;   
+        
+  width: auto;
+  object-fit: contain;
+  opacity: 0.95;
+}
+
+
+.logo {
+  filter: drop-shadow(0 0 2px rgba(255,255,255,0.15));
+}
+
+
 .navlinks {
   display: flex;
   justify-content: flex-end;
   gap: 24px;
 }
 
-/* NavLink styles */
+
 .navlinks a {
-  color: white;
+  color: #e5e7eb;
   text-decoration: none;
   font-weight: 500;
 }
 
-/* Active link (NavLink feature) */
+
 .navlinks a.active {
-  text-decoration: underline;
+  color: #ffffff;
+  border-bottom: 2px solid #ffffff;
 }
 
-/* Hover */
+
 .navlinks a:hover {
   opacity: 0.85;
 }

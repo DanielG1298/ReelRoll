@@ -1,4 +1,4 @@
-/* Page wrapper */
+
 .account-page {
   min-height: calc(100vh - 70px);
   max-width: 900px;
@@ -11,7 +11,7 @@
   position: relative;
 }
 
-/* Centered title */
+
 .account-page h1 {
   margin: 0;
   text-align: center;
@@ -20,7 +20,7 @@
   color: #e6eaf2;
 }
 
-/* Push user info DOWN from title */
+
 .account-page .username,
 .account-page .Email {
   margin-top: 32px;              
@@ -36,7 +36,7 @@
   gap: 6px;
 }
 
-/* Make the actual value stand out */
+
 .account-page .username::after {
   content: attr(data-value);
 }
@@ -45,7 +45,7 @@
   content: attr(data-value);
 }
 
-/* Since JSX includes text already, style second line */
+
 .account-page .username,
 .account-page .Email {
   line-height: 1.4;
@@ -58,7 +58,7 @@
   font-weight: 800;
 }
 
-/* Logout button — TOP RIGHT */
+
 .account-page button {
   position: absolute;
   top: 24px;

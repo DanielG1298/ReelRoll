@@ -8,7 +8,7 @@ export async function getReviewsByMovie(movieId) {
     const result = await response.json();
     return Array.isArray(result) ? result : [];
   } catch (err) {
-    console.error(err);
+    console.error("Error fetching reviews by movie ID:", err);
     return [];
   }
 }
@@ -33,7 +33,7 @@ export async function createReview(token, { movieId, rating, comment }) {
     const result = await response.json();
     return result;
   } catch (err) {
-    console.error(err);
+    console.error("Error creating review:", err);
     return null;
   }
 }
@@ -56,7 +56,7 @@ export async function getUserReviews(token) {
     const result = await response.json();
     return result;
   } catch (err) {
-    console.error(err);
+    console.error("Error fetching user reviews:", err);
     return null;
   }
 }
@@ -81,7 +81,7 @@ export async function updateReview(token, reviewId, { rating, comment }) {
     const result = await response.json();
     return result;
   } catch (err) {
-    console.error(err);
+    console.error("Error updating review:", err);
     return null;
   }
 }
@@ -104,7 +104,7 @@ export async function deleteReview(token, reviewId) {
     const result = await response.json();
     return result;
   } catch (err) {
-    console.error(err);
+    console.error("Error deleting review:", err);
     return null;
   }
 }

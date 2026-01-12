@@ -13,6 +13,7 @@ const navigate = useNavigate();
 
 useEffect(() =>{
     const fetchGenres = async () => {
+    setMovies(null);
     const data = await getGenres();
     setGenres((data) ? data : []);
     };fetchGenres();
@@ -23,7 +24,7 @@ useEffect (() => {
         const data = selectedGenre 
         ? await getMoviesByGenre(selectedGenre) 
         : await getMovies();
-         console.log("movies response:", data);
+         
         setMovies(Array.isArray(data) ? data : (data?.movies ??[]));
     };
     fetchMoviesByGenre();
