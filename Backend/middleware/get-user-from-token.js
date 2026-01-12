@@ -19,4 +19,5 @@ export default async function getUserFromToken(req, res, next){
         console.error(e);
         res.status(401).send("invalid token");
     }
-}
+}  
+

@@ -2,7 +2,7 @@ import express from 'express';
 const app = express();
 import corsMiddleware from './middleware/cors.js';
 import morgan from 'morgan';
-import getUserFromToken from './middleware/getUserFromToken.js';
+import getUserFromToken from './middleware/get-user-from-token.js';
 import usersRouter from './api/usersRouter.js';
 import movieRouter from './api/movieRouter.js';
 import genreRouter from './api/genreRouter.js';
