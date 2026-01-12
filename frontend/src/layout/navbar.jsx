@@ -1,6 +1,6 @@
 import { NavLink } from "react-router-dom";
 import "./navbar.css"
-import reelRollLogo from "../logo/reelrolllogo.png"
+import reelRollLogo from "../logo/reelrollLogo.png"
 export default function NavBar(){
     return(
     <>

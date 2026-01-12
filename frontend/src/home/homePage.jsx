@@ -1,6 +1,6 @@
 import Randomiser from "./randomiser.jsx";
 import "../CSS/homePage.css"
-import reelRollLogo from "../logo/reelrolllogo.png"
+import reelRollLogo from "../logo/reelRollLogo.png"
 export default function HomePage(){
     return(
         <>
