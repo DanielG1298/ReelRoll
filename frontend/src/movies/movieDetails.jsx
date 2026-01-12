@@ -4,7 +4,7 @@ import {useState,useEffect} from "react";
 import { useAuth } from "../auth/auth.jsx";
 import { useParams} from "react-router-dom";
 import  ReviewsTab  from "../reviews/reviews.jsx";
-import "../CSS/moviesDetails.css";
+import "../CSS/moviesdetails.css";
 //shows the details of the selected movie
 
 export default function MovieDetails(){
