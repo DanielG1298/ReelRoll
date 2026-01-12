@@ -1,6 +1,6 @@
 import { NavLink } from "react-router-dom";
 import "./navbar.css"
-import reelRollLogo from "../logo/reelrollLogo.png"
+
 export default function NavBar(){
     return(
     <>
@@ -9,7 +9,7 @@ export default function NavBar(){
         <div className="nav-left"/>
         
         <img
-          src={reelRollLogo}
+          src="reelRollLogo.png"
           alt="ReelRoll logo"
           className="logo"
         />
