@@ -3,7 +3,7 @@ import cors from "cors";
 const allowedOrigins = [
   "http://localhost:5173",
   "http://localhost:4173",
-  "https://keen-gumption-77ef99.netlify.app"
+  "https://reelroll.netlify.app"
 ];
 
 const corsMiddleware = cors({
