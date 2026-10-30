@@ -41,7 +41,7 @@ const displayed = random.slice(0, reqCount);
     return(
         <>
         <section className="ReelRollRandomiser">
-            <h2>ReelRollRandomsier</h2>
+            <h2>ReelRollRandomiser</h2>
             <p>select a genre or just hit random to get some recommendations</p>
 
             <div className ="randomiserControls">
